@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS news (
+  title TEXT,
+  description TEXT,
+  likes INT,
+  created_at TIMESTAMP WITHOUT TIME ZONE DEFAULT NOW(),
+  updated_at TIMESTAMP WITHOUT TIME ZONE DEFAULT NOW()
+);

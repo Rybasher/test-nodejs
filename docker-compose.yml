@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  db_dev:
+    image: postgres:alpine
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pass
+      - POSTGRES_DB=test_node
